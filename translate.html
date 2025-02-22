@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="translate.css">
+    <title>Translator App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h2 class="title">Translator</h2>
+            </div>
+            <div class="inputs">
+                <div class="first_input" id="input">
+                    <select id="languagesFrom">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="ta">Tamil</option>
+                        <option value="bn">Bengali</option>
+                        <option value="te">Telugu</option>
+                        <option value="ur">Urdu</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="mr">Marathi</option>
+                        <option value="gu">Gujarati</option>
+                        <option value="pa">Punjabi</option>
+                        <option value="kn">Kannada</option>
+                        <option value="or">Odia</option>
+                    </select>
+                    <i class="fas fa-close hidden" id="close"></i>
+                    <textarea id="translateFromTXTArea" autofocus cols="30" rows="10" placeholder="Enter Text"></textarea>
+                </div>
+                <i class="fas fa-exchange-alt" id="icon"></i>
+                <div class="second_input" id="input">
+                    <select id="languagesTo">
+                        <option value="hi">Hindi</option>
+                        <option value="en">English</option>
+                        <option value="ta">Tamil</option>
+                        <option value="bn">Bengali</option>
+                        <option value="te">Telugu</option>
+                        <option value="ur">Urdu</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="mr">Marathi</option>
+                        <option value="gu">Gujarati</option>
+                        <option value="pa">Punjabi</option>
+                        <option value="kn">Kannada</option>
+                        <option value="or">Odia</option>
+                    </select>
+                    <textarea id="translateToTXTArea" cols="30" rows="10" placeholder="Translation" disabled></textarea>
+                </div>
+                <p></p>
+            </div>
+            <button class="btn">Translate Text</button>
+            <button class="btn">🎤 Speak</button> 
+            <button class="btn">🔊 Listen to Translation</button> 
+        </div>
+      
+        <footer>
+            <h3>&copy 2025 | Built By : <a href="https://www.linkedin.com/in/nihal-gupta-015a77277">Nihal Gupta</a> | All rights reserved</h3>
+        </footer>
+    </div>
+    <script src="translate.js"></script>
+</body>
+
+</html>

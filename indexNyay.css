@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #51e959, #0072ff);
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation */
+nav {
+    background: #222;
+    padding: 10px;
+     
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+#contact {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+
+}
+img {
+    border-radius: 50%;  /* Makes the image circular */
+    height: 100px;       /* Ensures height remains 100px */
+    width: 100px;        /* Ensures width remains 100px */
+    object-fit: cover;   /* Ensures the image is properly cropped within the circle */
+    border: 3px solid #2B2D42; /* Optional: Adds a stylish border */
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+/* Style for the Language Button */
+#lang {
+    position: fixed;
+    left: 20px; /* Position on the left side */
+    top: 50px;
+    transform: translateY(-50%); /* Center vertically */
+    
+    background-color: #6888aa; /* Blue color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+#lang:hover {
+    background-color: #044d28; /* Darker Blue */
+    transform: translateY(-50%) scale(1.1); /* Slight Zoom Effect */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Active Effect */
+#lang:active {
+    background-color: #004080; /* Even Darker Blue */
+    transform: translateY(-50%) scale(1.05);
+}
+
+
+/* Floating Chatbot Icon */
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(224, 45, 45);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#chatbot-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Chatbot Modal */
+#chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 400px;
+    height: 550px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Chatbot Header */
+#chatbot-header {
+    background-color: #719bc7;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#close-chatbot {
+    background: rgb(241, 233, 233);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 15px;
+    font-size: 0.9em;
+}

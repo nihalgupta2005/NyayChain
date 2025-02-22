@@ -1,0 +1,172 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2B2D42;
+    color: white;
+    padding: 15px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    text-align: center;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: rgb(199, 25, 25);
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #b3a8a8;
+}
+
+.btn {
+    background: #EF233C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #D90429;
+}
+
+.translation {
+    text-align: center;
+    padding: 50px;
+    background: white;
+}
+
+.translate-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+textarea, select {
+    width: 30%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.legal-form {
+    text-align: center;
+    padding: 50px;
+    background: #EDF2F4;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+a {
+    text-decoration: none;
+}
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(209, 192, 192);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#chatbot-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+/* Chatbot Modal */
+#chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 400px;
+    height: 550px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Chatbot Header */
+#chatbot-header {
+    background-color: #719bc7;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#close-chatbot {
+    background: rgb(241, 233, 233);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+footer {
+    text-align: center;
+    background: #2B2D42;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}

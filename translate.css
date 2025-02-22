@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background: #183031
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.card {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #ccc;
+    margin-block: 1%;
+    font-size: 2rem;
+}
+
+.inputs{
+    display: flex;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    height: 50vh;
+    background: transparent;
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+}
+
+textarea:focus{
+    border: 1px solid rgb(170, 255, 0);
+}
+
+textarea::placeholder{
+    font-family: 'Poppins', sans-serif !important;
+    color: grey;
+    font-size: 1.2rem;
+}
+.first_input{
+    position: relative;
+}
+
+#close{
+    background: red;
+    width: auto;
+    padding: .4rem;
+    padding-block: .2rem;
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+#input select{
+    background: #2E2E2E;
+    width: 100%;
+    font-family: inherit !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#icon{
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    margin: 1rem;
+    height: 100%;
+}
+
+.btn{
+    background: #7a583c;
+    color: white;
+    margin: 2px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #4e3b2c;
+}
+
+footer {
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background: #085252;
+    padding-block: 1rem;
+    z-index: 1000;
+}
+
+footer h3{
+    font-size: .9rem;
+    color: white;
+    font-weight: 100;
+}
+
+footer h3 a {
+    color: rgb(6, 6, 8);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer h3 a:hover{
+    color: yellowgreen;
+}
+@media(max-width:1200px){
+    .card{
+        width: 90%;
+    }
+}
+
+@media(max-width:700px){
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    textarea{
+        height: 18vh;
+    }
+    #icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: .5rem;
+    }
+}
+/* Button hover effects */
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+/* Translation box loading effect */
+.loading {
+    background: repeating-linear-gradient(
+        45deg,
+        #f3f3f3,
+        #e0e0e0 10px,
+        #f3f3f3 20px
+    );
+    animation: shimmer 1s infinite linear;
+}
+
+@keyframes shimmer {
+    0% { background-position: -100px 0; }
+    100% { background-position: 100px 0; }
+}
+
+/* Microphone recording animation */
+.recording {
+    background-color: red !important;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Play button animation */
+.playing {
+    animation: bounce 0.5s ease-in-out infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Rotate animation for swap button */
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* Fade out effect */
+.fadeOut {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
